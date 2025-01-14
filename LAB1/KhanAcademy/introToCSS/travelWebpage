@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel Webpage</title>
+        <style>
+            body {
+                background-color: lightblue;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                color: yellow;
+                background-color: darkblue;
+                padding: 10px;
+                text-align: center;
+            }
+            h3 {
+                color: white;
+                background-color: green;
+                padding: 5px;
+            }
+            .highlight {
+                color: crimson;
+            }
+            #important {
+                color: orange;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Travel to Dubai, Habibi!</h1>
+        
+        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-in-hawaii.png" alt="Beautiful beach" width="425">
+        
+        <h3>Reasons to visit Dubai:</h3>
+        <ul>
+            <li class="highlight">Experience luxury like never before.</li>
+            <li>Explore stunning architecture like the Burj Khalifa.</li>
+            <li>Immerse yourself in rich cultural heritage.</li>
+        </ul>
+        
+        <h3>Top Attractions:</h3>
+        <ol>
+            <li>Burj Khalifa</li>
+            <li>Palm Jumeirah</li>
+            <li id="important">Dubai Desert Safari</li>
+        </ol>
+
+        <p>Dubai is a city of wonders with something for everyone. Whether you're looking for luxury, adventure, or culture, you'll find it all here.</p>
+        
+        <p>Don't forget to check out the breathtaking sunsets and try out local delicacies!</p>
+        
+        <img src="https://cdn.pixabay.com/photo/2020/02/18/09/02/burj-khalifa-4852751_960_720.jpg" alt="Burj Khalifa" width="300">
+        <img src="https://cdn.pixabay.com/photo/2017/07/09/06/57/dubai-2487330_960_720.jpg" alt="Palm Jumeirah" width="300">
+    </body>
+</html>
