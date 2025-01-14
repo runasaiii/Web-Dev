@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aruna's Recipe Book</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                text-align: center;
+                color: #ff6f61;
+            }
+            h2 {
+                color: #0056a1;
+                margin-top: 20px;
+            }
+            a {
+                color: #ff6f61;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+                color: #0056a1;
+            }
+            ul, ol {
+                margin-left: 20px;
+            }
+            p {
+                margin: 10px 0;
+            }
+            .recipe {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 15px;
+                margin-bottom: 20px;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <h1>Aruna's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        <ol>
+            <li><a href="#pancakes">Fluffy Pancakes</a></li>
+            <li><a href="#spaghetti">Classic Spaghetti</a></li>
+        </ol>
+
+        <div class="recipe" id="pancakes">
+            <h2>Fluffy Pancakes</h2>
+            <ul>
+                <li>Time: 20 minutes</li>
+                <li>Serves: 4</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Flour</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>2 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Milk</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Egg</td>
+                        <td>1 large</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>In a bowl, mix flour, sugar, and a pinch of salt.</li>
+                <li>Add milk and whisk until smooth.</li>
+                <li>Heat a non-stick pan and pour batter to form small pancakes.</li>
+                <li>Cook until bubbles form, then flip and cook the other side.</li>
+                <li>Serve warm with syrup and butter.</li>
+            </ol>
+
+            <p><em>Source: <a href="https://www.allrecipes.com/">AllRecipes</a></em></p>
+        </div>
+
+        <div class="recipe" id="spaghetti">
+            <h2>Classic Spaghetti</h2>
+            <ul>
+                <li>Time: 30 minutes</li>
+                <li>Serves: 4</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Tomato Sauce</td>
+                        <td>2 cups</td>
+                    </tr>
+                    <tr>
+                        <td>Ground Beef</td>
+                        <td>250g</td>
+                    </tr>
+                    <tr>
+                        <td>Garlic</td>
+                        <td>2 cloves</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Boil spaghetti in salted water until al dente.</li>
+                <li>In a pan, cook ground beef until browned.</li>
+                <li>Add garlic and tomato sauce to the beef and simmer for 10 minutes.</li>
+                <li>Drain spaghetti and mix with the sauce.</li>
+                <li>Serve with grated Parmesan cheese.</li>
+            </ol>
+
+            <p><em>Source: <a href="https://www.bbcgoodfood.com/">BBC Good Food</a></em></p>
+        </div>
+    </body>
+</html>
