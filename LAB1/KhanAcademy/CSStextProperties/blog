@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Blog</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+                margin: 20px 0;
+            }
+            h3 {
+                color: #555;
+                margin-top: 40px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            ul li {
+                margin: 10px 0;
+            }
+            a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h2 {
+                color: #444;
+                margin-top: 30px;
+            }
+            h6 {
+                color: #777;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #333;
+                margin: 10px 0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Blog</h1>
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#post1">First post!</a></li>
+            <li><a href="#post2">Another day, another post</a></li>
+        </ul>
+        <h2 id="post1">First post</h2>
+        <h6>Posted on January 14, 2025</h6>
+        <p>Today I started my blog! I'm so excited to share my journey as I learn and grow as a programmer. Stay tuned for more updates.</p>
+        <h2 id="post2">Another day, another post</h2>
+        <h6>Posted on January 15, 2025</h6>
+        <p>Learning CSS is so much fun! I styled my blog today, and it already looks so much better. Can't wait to add more features.</p>
+    </body>
+</html>
