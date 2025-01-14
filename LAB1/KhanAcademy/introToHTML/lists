@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PLaces I want to visit</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul>
+            <li> Switzerland</li>
+            <li> OAE </li>
+            <li> Spain </li>
+        </ul>
+        <ol>
+            <li> Miracle Garden </li>
+            <li> Eiffels tower </li>
+            <li> Ferrari Park </li>
+        </ol>
+        
+    </body>
+</html>
