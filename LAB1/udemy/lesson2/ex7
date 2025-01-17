@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <figure>
+      <img src="redwoods_state_park.jpg" alt="Redwoods State Park">
+      
+      <figcaption>Redwoods State Park in California</figcaption>
+    </figure>
+
+    <p>Learn more about this beautiful park: <a href="https://www.parks.ca.gov/?page_id=414">Redwoods State Park</a></p>
+  </body>
+</html>
