@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .details {
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .details p {
+            margin: 10px 0;
+        }
+        .rsvp {
+            margin-top: 20px;
+        }
+        .rsvp button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rsvp button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Our Event!</h1>
+    </div>
+
+    <div class="details">
+        <p><strong>Event:</strong> Coding Workshop</p>
+        <p><strong>Date:</strong> January 25, 2025</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Location:</strong> Room 101, Tech Building</p>
+    </div>
+
+    <div class="rsvp">
+        <button onclick="alert('Thanks for RSVPing!')">RSVP Now</button>
+    </div>
+</body>
+</html>
