@@ -1,0 +1,147 @@
+1)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: palevioletred;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>LAB3</h1>
+
+    <script>
+        alert("I’m JavaScript!");
+    </script>
+</body>
+</html>
+
+
+2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: palevioletred;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>LAB3</h1>
+
+    <script src="a.js">
+        
+    </script>
+</body>
+</html>
+
+alert("I’m JavaScript!")
+
+3)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(114, 222, 179);
+        }
+        h1{
+            background-color: palevioletred;
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>LAB3</h1>
+
+    <script>
+        let name='John';
+        let admin=name;
+        alert(admin);
+    </script>
+</body>
+</html>
+
+4)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(114, 222, 179);
+        }
+        h1{
+            background-color: palevioletred;
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>LAB3</h1>
+
+    <script>
+        let ourPlanet="Earth";
+        let userName="Aruna";
+    </script>
+</body>
+</html>
+
+
+5)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(114, 222, 179);
+        }
+        h1{
+            background-color: palevioletred;
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>LAB3</h1>
+
+    <script>
+    const BIRTHDAY = '18.04.1982';
+        const age = someCode(BIRTHDAY);
+    </script>
+</body>
+</html>
+
+6)
