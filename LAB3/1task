@@ -252,3 +252,851 @@ null === +"\n0\n" // false
 
 
 13)
+Выведется ли alert?
+
+if ("0") {
+  alert( 'Привет' );
+}
+
+Да
+
+14)
+<script>
+    let question = prompt("Какое «официальное» название JavaScript?");
+    if (question=="ECMAScript"){
+        alert("Right!")
+    }else{
+        alert("Oh no, u r wrong!")
+    }
+    </script>
+
+15)
+<script>
+    let n = prompt("Any nunber?");
+    if (n>0){
+        alert(1)
+    }else if(n<0){
+        alert(-1);
+    }else{
+        alert(0);
+    }
+    </script>
+
+16)
+result = (a + b < 4) ? 'Мало' : 'Много';
+
+17)
+let message = (login == 'Сотрудник') ? 'Привет' :
+  (login == 'Директор') ? 'Здравствуйте' :
+  (login == '') ? 'Нет логина' :
+  '';
+
+18)
+alert( null || 2 || undefined );
+2
+
+19)
+alert( alert(1) || 2 || alert(3) );
+1 then 2
+
+20)
+alert( 1 && null && 2 );
+null
+
+21)
+alert( alert(1) && alert(2) );
+1 then undefined
+
+22)
+alert( null || 2 && 3 || 4 );
+3
+
+23)
+let value = NaN;
+value &&= 10;
+value ||= 20;
+value &&= 30;
+value ||= 40;
+alert(value);
+30
+
+24)
+if (age >= 14 && age <= 90)
+
+25)
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );
+
+1 and 3
+
+26)
+let userName = prompt("Тук-тук, кто там?", '');
+if (userName === 'Админ') {
+  let pass = prompt('Пароль?', '');
+  if (pass === 'Я главный') {
+    alert( 'Здравствуйте!' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Отменено' );
+  } else {
+    alert( 'Неверный пароль' );
+  }
+} else if (userName === '' || userName === null) {
+  alert( 'Отменено' );
+} else {
+  alert( "Я вас не знаю" );
+}
+
+
+27)
+let city = null;
+city ??= "Берлин";
+city ??= null;
+city ??= "Кёльн";
+city ??= "Гамбург";
+alert(city);
+Берлин
+
+28)
+let num1 = 10,
+    num2 = 20,
+    result;
+result ??= num1 ?? num2;
+
+29)
+let i = 3;
+
+while (i) {
+  alert( i-- );
+}
+1
+
+30)
+let i = 0;
+while (++i < 5) alert( i );
+1 till 4
+
+let i = 0;
+while (i++ < 5) alert( i );
+1 til 5
+
+31)
+for (let i = 0; i < 5; i++) alert( i );
+0 till 4
+
+32)
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    alert( i );
+  }
+}
+
+33)
+let i = 0;
+while (i < 3) {
+  alert( `number ${i}!` );
+  i++;
+}
+
+34)
+let num;
+do {
+  num = prompt("Введите число больше 100?", 0);
+} while (num <= 100 && num);
+
+35)
+let n = 10;
+nextPrime:
+for (let i = 2; i <= n; i++) { 
+  for (let j = 2; j < i; j++) { 
+    if (i % j == 0) continue nextPrime; 
+  }
+  alert( i ); // простое число
+}
+
+36)
+if(browser == 'Edge') {
+  alert("You've got the Edge!");
+} else if (browser == 'Chrome'
+ || browser == 'Firefox'
+ || browser == 'Safari'
+ || browser == 'Opera') {
+  alert( 'Okay we support these browsers too' );
+} else {
+  alert( 'We hope that this page looks ok!' );
+}
+
+37)
+const number = +prompt('Введите число между 0 и 3', '');
+switch (number) {
+  case 0:
+    alert('Вы ввели число 0');
+    break;
+  case 1:
+    alert('Вы ввели число 1');
+    break;
+  case 2:
+  case 3:
+    alert('Вы ввели число 2, а может и 3');
+    break;
+}
+
+38)
+function checkAge(age) {
+  return (age > 18) || confirm('Родители разрешили?');
+}
+
+39)
+function min(a, b) {
+  return a < b ? a : b;
+}
+
+40)
+function pow(x, n) {
+  let result = x;
+
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n >= 1 && n % 1 == 0) {
+  alert( pow(x, n) );
+} else {
+  alert(`Степень ${n} невозможно возвести`);
+}
+
+41)
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+ask(
+  "Вы согласны?",
+  () => alert("Вы согласились."),
+  () => alert("Вы отменили выполнение.")
+);
+
+42)
+function pow(x, n) {
+  let result = 1;
+
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+
+let x = prompt("x?", "");
+let n = prompt("n?", "");
+
+if (n <= 0) {
+  alert(`Степень ${n} не поддерживается,
+    введите целую степень, большую 0`);
+} else {
+  alert( pow(x, n) );
+}
+
+43)
+let user={
+        name:"John",
+        surname:"Smith",
+
+    }
+    user.name="Pete";
+    delete user.name;
+
+44)
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+
+45)
+const user = {
+  name: "John"
+};
+// это будет работать?
+user.name = "Pete";
+yes
+
+46)
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
+let sum = 0;
+for (let key in salaries) {
+  sum += salaries[key];
+}
+alert(sum); 
+
+47)
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'number') {
+      obj[key] *= 2;
+    }
+  }
+}
+
+48)
+function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+}
+let user = makeUser();
+alert( user.ref.name ); 
+Error: Cannot read property 'name' of undefined
+
+49)
+let calculator = {
+  sum() {
+    return this.a + this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  },
+  read() {
+    this.a = +prompt('a?', 0);
+    this.b = +prompt('b?', 0);
+  }
+};
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+50)
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep() {
+    alert( this.step );
+    return this;
+  }
+};
+ladder.up().up().down().showStep().down().showStep();
+
+51)
+let obj = {};
+function A() { return obj; }
+function B() { return obj; }
+alert( new A() == new B() ); 
+
+52)
+function Calculator() {
+
+  this.read = function() {
+    this.a = +prompt('a?', 0);
+    this.b = +prompt('b?', 0);
+  };
+  this.sum = function() {
+    return this.a + this.b;
+  };
+
+  this.mul = function() {
+    return this.a * this.b;
+  };
+}
+let calculator = new Calculator();
+calculator.read();
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+
+53)
+function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function() {
+    this.value += +prompt('Сколько нужно добавить?', 0);
+  };
+
+}
+let accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
+
+54)
+let a = +prompt("Введите первое число", "");
+let b = +prompt("Введите второе число", "");
+alert( a + b );
+
+55)
+function readNumber() {
+  let num;
+  do {
+    num = prompt("Введите число", 0);
+  } while ( !isFinite(num) );
+  if (num === null || num === '') return null;
+  return +num;
+}
+alert(`Число: ${readNumber()}`);
+
+56)
+function random(min, max) {
+  return min + Math.random() * (max - min);
+}
+alert( random(1, 5) );
+alert( random(1, 5) );
+alert( random(1, 5) );
+
+57)
+function randomInteger(min, max) {
+  // случайное число от min до (max+1)
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+alert( randomInteger(1, 3) );
+
+58)
+function ucFirst(str) {
+  if (!str) return str;
+  return str[0].toUpperCase() + str.slice(1);
+}
+alert( ucFirst("вася") ); 
+
+59)
+function checkSpam(str) {
+  let lowerStr = str.toLowerCase();
+  return lowerStr.includes('drug') || lowerStr.includes('xxx');
+}
+alert( checkSpam('get a DrUg') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("lololo") );
+
+60)
+function truncate(str, maxlength) {
+  return (str.length > maxlength) ?
+    str.slice(0, maxlength - 1) + '…' : str;
+}
+
+61)
+function extractCurrencyValue(str) {
+  return +str.slice(1);
+}
+
+62)
+let fruits = ["Яблоки", "Груша", "Апельсин"];
+let shoppingCart = fruits;
+shoppingCart.push("Банан");
+alert( fruits.length ); 
+4
+
+63)
+let styles = ["Джаз", "Блюз"];
+styles.push("Рок-н-ролл");
+styles[Math.floor((styles.length - 1) / 2)] = "Классика";
+alert( styles.shift() );
+styles.unshift("Рэп", "Регги");
+
+64)
+let arr = ["a", "b"];
+arr.push(function() {
+  alert( this );
+})
+arr[2](); 
+a,b,function(){...}
+
+65)
+function sumInput() {
+  let numbers = [];
+  while (true) {
+    let value = prompt("Введите число", 0);
+    if (value === "" || value === null || !isFinite(value)) break;
+    numbers.push(+value);
+  }
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
+alert( sumInput() );
+
+66)
+function getMaxSubSum(arr) {
+  let maxSum = 0;
+  let partialSum = 0;
+  for (let item of arr) { // для каждого элемента массива
+    partialSum += item; // добавляем значение элемента к partialSum
+    maxSum = Math.max(maxSum, partialSum); // запоминаем максимум на данный момент
+    if (partialSum < 0) partialSum = 0; // ноль если отрицательное
+  }
+  return maxSum;
+}
+alert( getMaxSubSum([-1, 2, 3, -9]) ); 
+alert( getMaxSubSum([-1, 2, 3, -9, 11]) ); 
+alert( getMaxSubSum([-2, -1, 1, 2]) ); 
+alert( getMaxSubSum([100, -9, 2, -3, 5]) ); 
+alert( getMaxSubSum([1, 2, 3]) ); 
+alert( getMaxSubSum([-1, -2, -3]) ); 
+5,11,3,100,6,0
+
+67)
+function camelize(str) {
+  return str
+    .split('-')
+    .map(
+      (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join(''); // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
+}
+
+68)
+function filterRange(arr, a, b) {
+  return arr.filter(item => (a <= item && item <= b));
+}
+let arr = [5, 3, 8, 1];
+let filtered = filterRange(arr, 1, 4);
+alert( filtered ); 
+alert( arr );
+
+69)
+function filterRangeInPlace(arr, a, b) {
+  for (let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+    if (val < a || val > b) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+}
+let arr = [5, 3, 8, 1];
+filterRangeInPlace(arr, 1, 4); 
+alert( arr ); // [3, 1]
+
+70)
+let arr = [5, 2, 1, -10, 8];
+arr.sort((a, b) => b - a);
+alert( arr );
+
+71)
+function copySorted(arr) {
+  return arr.slice().sort();
+}
+let arr = ["HTML", "JavaScript", "CSS"];
+let sorted = copySorted(arr);
+alert( sorted );
+alert( arr );
+
+72)
+function Calculator() {
+  this.methods = {
+    "-": (a, b) => a - b,
+    "+": (a, b) => a + b
+  };
+  this.calculate = function(str) {
+
+    let split = str.split(' '),
+      a = +split[0],
+      op = split[1],
+      b = +split[2]
+    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+      return NaN;
+    }
+    return this.methods[op](a, b);
+  }
+  this.addMethod = function(name, func) {
+    this.methods[name] = func;
+  };
+}
+
+73)
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+let users = [ vasya, petya, masha ];
+let names = users.map(item => item.name);
+alert( names );
+
+74)
+let usersMapped = users.map(user => ({
+  fullName: `${user.name} ${user.surname}`,
+  id: user.id
+}));
+
+75)
+function sortByAge(arr) {
+  arr.sort((a, b) => a.age - b.age);
+}
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+let arr = [ vasya, petya, masha ];
+sortByAge(arr);
+alert(arr[0].name); 
+alert(arr[1].name);
+alert(arr[2].name); 
+
+76)
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+let count = {
+  '123': 0,
+  '132': 0,
+  '213': 0,
+  '231': 0,
+  '321': 0,
+  '312': 0
+};
+for (let i = 0; i < 1000000; i++) {
+  let array = [1, 2, 3];
+  shuffle(array);
+  count[array.join('')]++;
+}
+for (let key in count) {
+  alert(`${key}: ${count[key]}`);
+}
+
+77)
+function getAverageAge(users) {
+  return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+}
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+let arr = [ vasya, petya, masha ];
+alert( getAverageAge(arr) );
+
+78)
+function unique(arr) {
+  let result = [];
+  for (let str of arr) {
+    if (!result.includes(str)) {
+      result.push(str);
+    }
+  }
+  return result;
+}
+let strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", ":-O"
+];
+alert( unique(strings) ); 
+
+79)
+function groupById(array) {
+  return array.reduce((obj, value) => {
+    obj[value.id] = value;
+    return obj;
+  }, {})
+}
+
+80)
+function unique(arr) {
+  return Array.from(new Set(arr));
+}
+
+81)
+function aclean(arr) {
+  let obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    let sorted = arr[i].toLowerCase().split("").sort().join("");
+    obj[sorted] = arr[i];
+  }
+  return Object.values(obj);
+}
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+alert( aclean(arr) );
+
+82)
+let map = new Map();
+map.set("name", "John");
+let keys = Array.from(map.keys());
+keys.push("more");
+alert(keys); 
+
+83)
+let messages = [
+    {text: "Hello", from: "John"},
+    {text: "How goes?", from: "John"},
+    {text: "See you soon", from: "Alice"}
+];
+let readMessages = new WeakSet();
+readMessages.add(messages[0]);
+readMessages.add(messages[1]);
+readMessages.add(messages[0]);
+alert("Read message 0: " + readMessages.has(messages[0])); // true
+messages.shift();
+
+84)
+let messages = [
+  {text: "Hello", from: "John"},
+  {text: "How goes?", from: "John"},
+  {text: "See you soon", from: "Alice"}
+];
+let readMap = new WeakMap();
+readMap.set(messages[0], new Date(2017, 1, 1));
+
+85)
+function sumSalaries(salaries) {
+  let sum = 0;
+  for (let salary of Object.values(salaries)) {
+    sum += salary;
+  }
+  return sum; // 650
+}
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+alert( sumSalaries(salaries) );
+
+86)
+function count(obj) {
+  return Object.keys(obj).length;
+}
+
+87)
+let user = {
+  name: "John",
+  years: 30
+};
+let {name, years: age, isAdmin = false} = user;
+alert( name );
+alert( age ); 
+alert( isAdmin ); 
+
+88)
+function topSalary(salaries) {
+  let max = 0;
+  let maxName = null;
+  for(const [name, salary] of Object.entries(salaries)) {
+    if (max < salary) {
+      max = salary;
+      maxName = name;
+    }
+  }
+  return maxName;
+}
+
+89)
+let d = new Date(2012, 1, 20, 3, 12);
+alert( d );
+
+90)
+function getWeekDay(date) {
+  let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+  return days[date.getDay()];
+}
+let date = new Date(2014, 0, 3); 
+alert( getWeekDay(date) ); 
+
+91)
+function getLocalDay(date) {
+  let day = date.getDay();
+  if (day == 0) { 
+    day = 7;
+  }
+  return day;
+}
+
+92)
+function getDateAgo(date, days) {
+  let dateCopy = new Date(date);
+  dateCopy.setDate(date.getDate() - days);
+  return dateCopy.getDate();
+}
+let date = new Date(2015, 0, 2);
+alert( getDateAgo(date, 1) ); 
+alert( getDateAgo(date, 2) ); 
+alert( getDateAgo(date, 365) );
+
+93)
+function getLastDayOfMonth(year, month) {
+  let date = new Date(year, month + 1, 0);
+  return date.getDate();
+}
+alert( getLastDayOfMonth(2012, 0) ); 
+alert( getLastDayOfMonth(2012, 1) ); 
+alert( getLastDayOfMonth(2013, 1) ); 
+
+94)
+function getSecondsToday() {
+  let now = new Date();
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let diff = now - today;
+  return Math.round(diff / 1000); 
+}
+alert( getSecondsToday() );
+
+95)
+function getSecondsToTomorrow() {
+  let now = new Date();
+  let hour = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+  let totalSecondsToday = (hour * 60 + minutes) * 60 + seconds;
+  let totalSecondsInADay = 86400;
+  return totalSecondsInADay - totalSecondsToday;
+}
+
+96)
+function formatDate(date) {
+  let dayOfMonth = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let diffMs = new Date() - date;
+  let diffSec = Math.round(diffMs / 1000);
+  let diffMin = diffSec / 60;
+  let diffHour = diffMin / 60;
+  year = year.toString().slice(-2);
+  month = month < 10 ? '0' + month : month;
+  dayOfMonth = dayOfMonth < 10 ? '0' + dayOfMonth : dayOfMonth;
+  hour = hour < 10 ? '0' + hour : hour;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  if (diffSec < 1) {
+    return 'прямо сейчас';
+  } else if (diffMin < 1) {
+    return `${diffSec} сек. назад`
+  } else if (diffHour < 1) {
+    return `${diffMin} мин. назад`
+  } else {
+    return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`
+  }
+}
+
+97)
+let user = {
+  name: "Lola Lila",
+  age: 35
+};
+let user2 = JSON.parse(JSON.stringify(user));
+
+98)
+let room = {
+  number: 23
+};
+let meetup = {
+  title: "Совещание",
+  occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+  place: room
+};
+room.occupiedBy = meetup;
+meetup.self = meetup;
+alert( JSON.stringify(meetup, function replacer(key, value) {
+  return (key != "" && value == meetup) ? undefined : value;
+}));
+
+99)
