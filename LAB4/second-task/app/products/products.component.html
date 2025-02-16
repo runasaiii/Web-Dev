@@ -1,0 +1,27 @@
+<div class="header">
+    <h1>Аптека ИП Садирмекова Б.Х.</h1>
+    <p class="subtitle">Лучшие цены и качество в одном месте!</p>
+</div>
+
+<div class="products-container">
+    <div *ngFor="let product of products" class="product-card">
+        <div class="image-container">
+            <img [src]="product.gallery[selectedImage[product.name]]" 
+                 [alt]="product.name" 
+                 class="product-image"
+                 (click)="nextImage(product.name, product.gallery.length)">
+        </div>
+
+        <h3>{{ product.name }}</h3>
+        <p class="description">{{ product.description }}</p>
+        <p class="price">Цена: {{ product.price }} тг</p>
+        <p class="rating">⭐ {{ product.rating }}</p>
+
+        <a [href]="product.link" target="_blank" class="btn buy-btn">Купить</a>
+        
+        <div class="buttons">
+            <a (click)="share(product.link, 'whatsapp')" class="btn whatsapp">Поделиться в WhatsApp</a>
+            <a (click)="share(product.link, 'telegram')" class="btn telegram">Поделиться в Telegram</a>
+        </div>
+    </div>
+</div>
