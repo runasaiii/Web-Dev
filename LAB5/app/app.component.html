@@ -1,0 +1,23 @@
+<div class="header">
+    <h1>Аптека ИП Садирмекова Б.Х.</h1>
+    <p class="subtitle">Лучшие цены и качество в одном месте!</p>
+  </div>
+  
+  <br>
+  
+  <nav>
+    <h2>Категории</h2>
+    <ul class="category-list">
+      <li class="category-item">
+        <button (click)="showAllProducts()">Все товары</button>
+      </li>
+      <li *ngFor="let category of categories" class="category-item">
+        <button (click)="selectCategory(category)">{{ category.name }}</button>
+      </li>
+    </ul>
+  </nav>
+  
+  <app-product-list 
+    [category]="selectedCategory">
+  </app-product-list>
+  
