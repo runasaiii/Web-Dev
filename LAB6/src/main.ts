@@ -8,7 +8,7 @@ import { provideHttpClient } from '@angular/common/http';
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
-    provideRouter(routes) // <-- Должно быть здесь
+    provideRouter(routes) 
     
   ]
 })
