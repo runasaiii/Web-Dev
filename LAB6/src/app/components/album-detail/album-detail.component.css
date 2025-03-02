@@ -8,8 +8,6 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
-
-/* Заголовок */
 h2 {
     color: #e24aad;
     font-size: 22px;
@@ -18,16 +16,12 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/* ID и Title */
 p {
     font-size: 16px;
     color: #333;
     margin-bottom: 12px;
     font-weight: 500;
 }
-
-/* Контейнер для Title, чтобы сделать выравнивание */
 .title-container {
     display: flex;
     align-items: center;
@@ -36,7 +30,6 @@ p {
     gap: 10px;
 }
 
-/* Поле ввода Title */
 input {
     flex-grow: 1;
     padding: 10px;
@@ -51,16 +44,12 @@ input:focus {
     border-color: #c13c91;
     box-shadow: 0 0 5px rgba(226, 74, 173, 0.5);
 }
-
-/* Контейнер кнопок */
 .buttons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-
-/* Универсальный стиль кнопок и ссылок */
 button, a {
     padding: 10px 15px;
     text-decoration: none;
@@ -75,8 +64,6 @@ button, a {
     align-items: center;
     gap: 6px;
 }
-
-/* Кнопки */
 button {
     background-color: #e24aad;
 }
@@ -85,8 +72,6 @@ button:hover {
     background-color: #c13c91;
     transform: scale(1.05);
 }
-
-/* Ссылка */
 a {
     background-color: #e24aad;
 }
@@ -96,7 +81,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Адаптивность */
 @media (max-width: 480px) {
     .album-detail-container {
         max-width: 90%;
