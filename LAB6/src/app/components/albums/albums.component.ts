@@ -25,7 +25,6 @@ export class AlbumsComponent implements OnInit {
     this.albumsService.getAlbums().subscribe(data => {
       this.albums = data;
   
-      // Проверяем, есть ли обновленный альбом в router state
       const updatedAlbum = history.state.updatedAlbum;
       if (updatedAlbum) {
         this.albums = this.albums.map(album =>
