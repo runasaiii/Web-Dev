@@ -1,0 +1,17 @@
+<div class="task-item" [class.completed]="status === 'Completed'">
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+    <span class="category">📂 {{ category }}</span>
+    <span class="status" [class.completed]="status === 'Completed'">
+        {{ status }}
+    </span>
+    
+    <button 
+        (click)="markAsCompleted()" 
+        [disabled]="status === 'Completed'"
+        [class.completed-btn]="status === 'Completed'">
+        {{ status === 'Completed' ? 'Completed ✅' : '✔ Mark as Completed' }}
+    </button>
+
+    <a [routerLink]="['/task', taskId]" class="view-details">📒 View Details</a>
+</div>

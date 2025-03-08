@@ -1,0 +1,36 @@
+.task-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffafcc;
+    transition: 0.3s;
+}
+.task-item.completed {
+    opacity: 0.6; 
+}
+.status {
+    font-weight: bold;
+    color: #ff4d6d; 
+    transition: 0.3s;
+}
+
+.status.completed {
+    color: #28a745; 
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.completed-btn {
+    background: #ccc !important;
+    color: #666 !important;
+    cursor: default;
+    transform: none !important;
+}
