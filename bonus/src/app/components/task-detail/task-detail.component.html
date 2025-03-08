@@ -1,0 +1,14 @@
+<div *ngIf="task" class="task-detail">
+    <h2>{{ task.title }}</h2>
+    <p>{{ task.description }}</p>
+    <span class="category">📂 Category: {{ task.category }}</span>
+    <span class="deadline">⏳ Deadline: {{ task.deadline | date:'longDate' }}</span>
+    <p>Status: {{ task.status }}</p>
+    <button routerLink="/" class="back-btn">⬅ Back to Tasks</button>
+  </div>
+  
+  <div *ngIf="!task" class="not-found">
+    <p>❌ Task not found!</p>
+    <button routerLink="/" class="back-btn">⬅ Back to Tasks</button>
+  </div>
+  
