@@ -1,0 +1,12 @@
+<div class="task-list">
+    <h2>✨ Your Tasks ✨</h2>
+    <app-task-item *ngFor="let task of tasks" 
+                   [taskId]="task.id"
+                   [title]="task.title" 
+                   [description]="task.description"
+                   [category]="task.category" 
+                   [deadline]="task.deadline"
+                   (taskCompleted)="onTaskCompleted(task)">
+    </app-task-item>
+  </div>
+  
