@@ -1,4 +1,3 @@
-/* Основной стиль для body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7fc;
@@ -7,7 +6,6 @@ body {
     color: #333;
   }
   
-  /* Заголовки */
   h2, h3 {
     color: #2c3e50;
     text-align: center;
@@ -15,7 +13,6 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Стили для списка компаний */
   ul {
     list-style-type: none;
     padding: 0;
@@ -23,7 +20,6 @@ body {
     max-width: 600px;
   }
   
-  /* Стили для каждого элемента списка */
   li {
     background-color: #ffffff;
     margin: 10px 0;
@@ -34,19 +30,16 @@ body {
     transition: all 0.3s ease;
   }
   
-  /* Эффект при наведении */
   li:hover {
     background-color: #f0f0f0;
     transform: translateY(-2px);
   }
   
-  /* Стили для выделенного элемента */
   li.selected {
     background-color: #dff0d8;
     font-weight: bold;
   }
   
-  /* Блок с вакансиями */
   div {
     margin-top: 30px;
     max-width: 600px;
@@ -58,7 +51,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Стили для списка вакансий */
   div ul {
     list-style-type: none;
     padding: 0;
@@ -72,12 +64,10 @@ body {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   }
   
-  /* Эффект для вакансий */
   div li:hover {
     background-color: #f0f0f0;
   }
   
-  /* Стили для текста с зарплатой */
   div li span.salary {
     font-weight: bold;
     color: #27ae60;
