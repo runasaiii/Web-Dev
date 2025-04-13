@@ -1,0 +1,85 @@
+/* Основной стиль для body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Заголовки */
+  h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для списка компаний */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  /* Стили для каждого элемента списка */
+  li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Эффект при наведении */
+  li:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  /* Стили для выделенного элемента */
+  li.selected {
+    background-color: #dff0d8;
+    font-weight: bold;
+  }
+  
+  /* Блок с вакансиями */
+  div {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для списка вакансий */
+  div ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  div li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Эффект для вакансий */
+  div li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Стили для текста с зарплатой */
+  div li span.salary {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
